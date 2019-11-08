@@ -140,4 +140,44 @@ module.exports = class Crud {
     // return promise
     return request(options)
   }
+
+  /**
+  * Re-enables an object that is disabled
+  * @param {Integer} id - the ID of the object to delete
+  * @return {Promise} the request promise, which resolves to undefined when
+  * successful
+  */
+  enable (id) {
+    // build base options for REST request
+    const options = this.baseOptions()
+    // get the REST URL path for this object type
+    options.url = this.parent.urls[this.type]
+    // set REST operation to PUT
+    options.method = 'PUT'
+    // get type string in dashed format
+    const type = options.url.split('/').pop()
+    // build REST body to soft-delete (disable) object
+    if (type === 'users') {
+      // users API has different format 🙄
+      options.body = {
+        id,
+        type: 'user',
+        attributes: {
+          status__i: 1
+        }
+      }
+    } else {
+      options.body = [
+        {
+          id,
+          type,
+          attributes: {
+            status__i: 1
+          }
+        }
+      ]
+    }
+    // return promise
+    return request(options)
+  }
 }
