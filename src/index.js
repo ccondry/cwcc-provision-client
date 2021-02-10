@@ -46,6 +46,8 @@ module.exports = class {
     this.routingStrategy = new Crud(this, 'routingStrategy')
     // User Profile
     this.userProfile = new Crud(this, 'userProfile')
+    // Skill Definition
+    this.skill = new Crud(this, 'skill')
     // Skill Profile
     this.skillProfile = new Crud(this, 'skillProfile')
     // Agent Skill

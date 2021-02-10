@@ -8,6 +8,7 @@ module.exports = {
   site: '/api/auxiliary-data/resources/site',
   userProfile: '/api/auxiliary-data/user-data/user-profile',
   agentProfile: '/api/auxiliary-data/user-data/agent-profile',
+  skill: '/api/auxiliary-data/resources/skill',
   skillProfile: '/api/auxiliary-data/resources/skill-profile',
   agentSkill: '/api/auxiliary-data/resources/agent-skill',
   tfn: '/api/auxiliary-data/resources/tfn'
