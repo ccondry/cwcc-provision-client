@@ -54,7 +54,8 @@ module.exports = class {
     this.agentSkill = new Crud(this, 'agentSkill')
     // Agent Profile
     this.agentProfile = new Crud(this, 'agentProfile')
-
+    // Desktop Layout
+    this.desktopLayout = new Crud(this, 'desktopLayout')
 
     // add helper function to get user by login name
     this.user.getByLogin = function (login) {

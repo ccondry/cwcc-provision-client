@@ -11,5 +11,6 @@ module.exports = {
   skill: '/api/auxiliary-data/resources/skill',
   skillProfile: '/api/auxiliary-data/resources/skill-profile',
   agentSkill: '/api/auxiliary-data/resources/agent-skill',
-  tfn: '/api/auxiliary-data/resources/tfn'
+  tfn: '/api/auxiliary-data/resources/tfn',
+  desktopLayout: '/api/auxiliary-data/resources/desktop-layout'
 }
