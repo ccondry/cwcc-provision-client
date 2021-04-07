@@ -47,3 +47,6 @@ client.team.list()
 
 # Reference
 REST API guide: https://rest-sbxa.ccone.net/rest-api-doc/
+
+# Notes
+Most data types require JSON body to be in an array, except for user type.
