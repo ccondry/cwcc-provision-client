@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/ccondry/cwcc-provision-client/issues"
   },
-  "homepage": "https://github.com/ccondry/cwcc-provision-client#readme"
+  "homepage": "https://github.com/ccondry/cwcc-provision-client#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
